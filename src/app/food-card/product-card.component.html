@@ -1,0 +1,6 @@
+<p-card [header]="header" *ngIf="product" >
+  <img [src]="product.imageUrl" [alt]="product.name"/>
+  <ng-template pTemplate="footer">
+    <p>{{product.name ? product.name : '&nbsp;'}}</p>
+  </ng-template>
+</p-card>

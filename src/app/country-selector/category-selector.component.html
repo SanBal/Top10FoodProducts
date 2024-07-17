@@ -1,0 +1,9 @@
+<div class="container">
+  <p-tag *ngFor="let category of categories" [ngStyle]="{'background': category.name === selectedCategoryObject?.name ? 'black' : 'white'}"
+         [value]="category.name"
+         [severity]="category.type"
+         [rounded]="true"
+         (click)="selectCategory(category)"
+  />
+</div>
+
